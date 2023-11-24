@@ -1,0 +1,18 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+
+defineProps<{ msg: string }>()
+let intro = ref('zhaimou')
+</script>
+
+<template>
+  <h1>😀😀😀{{ msg }}😀😀😀</h1>
+  <div />
+  <h2>👑👑👑👑👑{{ intro }}👑👑👑👑👑</h2>
+</template>
+
+<style scoped>
+div {
+  height: 100px;
+}
+</style>
