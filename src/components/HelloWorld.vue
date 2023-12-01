@@ -7,12 +7,7 @@ let intro = ref('zhaimou')
 
 <template>
   <h1>😀😀😀{{ msg }}😀😀😀</h1>
-  <div />
   <h2>👑👑👑👑👑{{ intro }}👑👑👑👑👑</h2>
 </template>
 
-<style scoped>
-div {
-  height: 100px;
-}
-</style>
+<style scoped></style>
