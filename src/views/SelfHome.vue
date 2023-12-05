@@ -15,6 +15,7 @@ import { useUserStore, useLoginStore } from '@/store/modules/user'
 const userStore = useUserStore()
 const loginStore = useLoginStore()
 const router = useRouter()
+// const route = useRoute()
 //  这样可以解构使用
 //  storeToRefs是包了层toRef  返回的对象是一个Ref对象 所以需要.value改变
 // const { name, age } = storeToRefs(userStore)
@@ -36,8 +37,14 @@ const change = () => {
   userStore.setUser()
 }
 const toDemo = () => {
-  router.push('/demo')
+  // 1.字符串
+  // 2.对象
+  //   push 会保存历史记录 replace不会
+  router.replace({
+    path: '/demo',
+  })
 }
+// .go 和 .back 前进和后退一个历史记录  router.go(1) router.back(1)
 // 当onAction
 // userStore.$onAction((args) => {
 // })

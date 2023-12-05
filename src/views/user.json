@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "name": "kobe",
+      "age": "32",
+      "players": "good"
+    },
+    {
+      "name": "james",
+      "age": "48",
+      "players": "well"
+    },
+    {
+      "name": "joe",
+      "age": "33",
+      "players": "bad"
+    }
+  ]
+}

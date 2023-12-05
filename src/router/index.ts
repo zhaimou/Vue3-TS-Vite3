@@ -1,9 +1,36 @@
 import { RouteRecordRaw, createRouter, createWebHistory } from 'vue-router'
 
 const routes: Array<RouteRecordRaw> = [
-  { path: '/', redirect: '/home' },
-  { path: '/home', name: 'Home', component: () => import('../views/SelfHome.vue') },
-  { path: '/demo', name: 'Demo', component: () => import('../views/SelfDemo.vue') },
+  {
+    path: '/',
+    // alias: ['/home1', '/home2'],
+    redirect: '/home',
+    // redirect: { path: '/home' },
+    // redirect: (to) => {
+    //     console.log(to)
+    //     return {
+    //         path:'home',
+    //         query:{
+    //             name:'zhaimou',
+    //         }
+    //     }
+    // }
+  },
+  {
+    path: '/home',
+    name: 'Home',
+    component: () => import('../views/SelfHome.vue'),
+  },
+  {
+    path: '/demo',
+    name: 'Demo',
+    component: () => import('../views/SelfDemo.vue'),
+  },
+  {
+    path: '/show:id',
+    name: 'Show',
+    component: () => import('../views/SelfShow.vue'),
+  },
 ]
 
 const router = createRouter({
