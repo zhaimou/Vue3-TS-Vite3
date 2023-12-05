@@ -6,5 +6,5 @@
 😠 Pretttier 😠<br>
 📸 ElementPlus 📸<br>
 🔥 Husky  🔥<br>
-💥 Lint-staged <br>
+💥 Lint-staged 💥<br>
 ```
